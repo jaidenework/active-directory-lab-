@@ -7,6 +7,12 @@ Client01 – Windows client joined to the domain
 The purpose of this lab is to practice domain management, user creation, and remote desktop access in a safe, isolated environment.
 
 # section 1: create resource group and virtual machine in Azure
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%201.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%202.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%203.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%204.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%205.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%206.png)
 
 # section 2: configure virtual machine to have a static IP and set DNS to the static IP
 
