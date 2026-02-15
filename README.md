@@ -52,14 +52,48 @@ The purpose of this lab is to practice domain management, user creation, and rem
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/eb4c83919bb5378f33a5a421bf43dc99e6339ea9/Screenshot%2030.png)
 
 # section 9: add PowerShell script to automate user account to the domain
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2036.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2037.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2038.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2039.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2040.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2041.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2042.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2043.png)
 
-# section10: create second virtual machine  and set DNS to the first virtual machine's private IP
+# section 10: create second virtual machine  and set DNS to the first virtual machine's private IP
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/54b7124897ee19ecb9e74986b8240a512286a7ee/Screenshot%2031.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/54b7124897ee19ecb9e74986b8240a512286a7ee/Screenshot%2032.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/54b7124897ee19ecb9e74986b8240a512286a7ee/Screenshot%2033.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/54b7124897ee19ecb9e74986b8240a512286a7ee/Screenshot%2034.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/54b7124897ee19ecb9e74986b8240a512286a7ee/Screenshot%2035.png)
 
 # section 11: make sure remote desktop logon is allowed for the second virtual machine
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f0afaa4cf0067b221bffb61e5a7466daf8480905/Screenshot%2044.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f0afaa4cf0067b221bffb61e5a7466daf8480905/Screenshot%2046.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f0afaa4cf0067b221bffb61e5a7466daf8480905/Screenshot%2047.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e2f9e49db7cddf5d55dbec37813818154d157a24/Screenshot48.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e2f9e49db7cddf5d55dbec37813818154d157a24/Screenshot49.png)
+
 
 # section 12: make sure everything shows up when pinging 
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e2f9e49db7cddf5d55dbec37813818154d157a24/Screenshot50.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/70d416a75363c1bdcb52e1a1b470b6949a5a24e5/Screenshot%2051.png)
 
 # section 13: have the second virtual machine join the domain in the Active Directory
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/70d416a75363c1bdcb52e1a1b470b6949a5a24e5/Screenshot%2052.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/70d416a75363c1bdcb52e1a1b470b6949a5a24e5/Screenshot%2053.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/70d416a75363c1bdcb52e1a1b470b6949a5a24e5/Screenshot%2054.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/04ce0c289e4857e36df2ede1138bc8f329590f74/screenshot%2055.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/04ce0c289e4857e36df2ede1138bc8f329590f74/Screenshot%2056.png)
+
 
 # section 14: make sure everything works with remote logons 
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/04ce0c289e4857e36df2ede1138bc8f329590f74/Screenshot50.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/04ce0c289e4857e36df2ede1138bc8f329590f74/Screenshot%2057.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/82f3bd38b2f755c0853882fe7f881daa405ada73/Screenshot%2058.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e4dc21116a286bb42bc276aa54d6311920333786/Screenshot%2059.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e4dc21116a286bb42bc276aa54d6311920333786/Screenshot%2060.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e4dc21116a286bb42bc276aa54d6311920333786/Screenshot%2061.png)
+![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e4dc21116a286bb42bc276aa54d6311920333786/Screenshot%2062.png)
 
