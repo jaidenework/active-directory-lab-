@@ -9,7 +9,7 @@ The purpose of this lab is to practice domain management, user creation, and rem
 # section 1: create resource group and virtual machine in Azure
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%201.png)
 
--Create a resource group, and while creating this, you have to choose a region that best works for you
+- Create a resource group, and while creating this, you have to choose a region that best works for you
 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%202.png)
 
@@ -17,7 +17,7 @@ The purpose of this lab is to practice domain management, user creation, and rem
 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%203.png)
 
--When creating the virtual machine, go to select image and choose Windows Server 2019 Datacenter - x64 Gen 2
+- When creating the virtual machine, go to select image and choose Windows Server 2019 Datacenter - x64 Gen 2
 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%204.png)
 
@@ -29,13 +29,13 @@ The purpose of this lab is to practice domain management, user creation, and rem
   
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3ff2d9cbe5b870ab0d6f1762539273d50011145c/Screenshot%206.png)
 
--You then need to make sure that RDP is allowed for your virtual machine. Click next until the network makes sure there is a public IP, and then click review + create, and then create
+- You then need to make sure that RDP is allowed for your virtual machine. Click next until the network makes sure there is a public IP, and then click review + create, and then create
 
 # section 2: configure virtual machine to have a static IP and set DNS to the static IP
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/4dd3cccc2939cbbdbda54f57f1081920873da6fc/Screenshot%207.png)
 
--Now that the virtual machine is created, go to the virtual machine in Azure and click the virtual machine you created 
--then go to the networking section, click on networking, click the network interface, and then click IP configuration
+- Now that the virtual machine is created, go to the virtual machine in Azure and click the virtual machine you created 
+- then go to the networking section, click on networking, click the network interface, and then click IP configuration
 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/4dd3cccc2939cbbdbda54f57f1081920873da6fc/Screenshot%208.png)
 
@@ -50,21 +50,22 @@ The purpose of this lab is to practice domain management, user creation, and rem
 # section 3: allow LDAP and DNS
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/4dd3cccc2939cbbdbda54f57f1081920873da6fc/Screenshot%2010.png)
 
--Go back to the network section for the virtual machine created and add port rules for DNS and LDAP
+- Go back to the network section for the virtual machine created and add port rules for DNS and LDAP
 
 # section 4: deploy the Virtual machine in Windows app
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/4dd3cccc2939cbbdbda54f57f1081920873da6fc/Screenshot%2011.png)
 
--Make sure ot have the "Windows app" application installed, and in this app, click the plus sign in the top right corner and input the public IP address created for the virtual machine you have created so that you can deploy the virtual machine
+- Make sure ot have the "Windows app" application installed, and in this app, click the plus sign in the top right corner and input the public IP address created for the virtual machine you have created so that you can deploy the virtual machine
 
 # section 5: install Active Directory and create a domain
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/98f3e489ebfe4e4fea479fd059828a2f39b98736/Screenshot%2012.png)
 
--Now that you are in the Windows virtual machine you have created, click Add Roles and Features
+- Now that you are in the Windows virtual machine you have created, click Add Roles and Features
 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/98f3e489ebfe4e4fea479fd059828a2f39b98736/Screenshot%2013.png)
 
-- Make sure that the right server is selected, which should be the virtual machine that you have created, displaying the static IP address you configured in Azure 
+- Make sure that the right server is selected, which should be the virtual machine that you have created, displaying the static IP address you configured in Azure
+ 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/98f3e489ebfe4e4fea479fd059828a2f39b98736/Screenshot%2014.png)
 
 - for server roles select Active Directory Domain Services
@@ -78,6 +79,7 @@ The purpose of this lab is to practice domain management, user creation, and rem
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/98f3e489ebfe4e4fea479fd059828a2f39b98736/Screenshot%2016.png)
 
 - Now that we are here, select Add a new forest, and select a name for your domain and input it into the root domain name section
+
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/98f3e489ebfe4e4fea479fd059828a2f39b98736/Screenshot%2017.png)
 
 - After picking a name, create a password for the domain controller account
@@ -96,6 +98,7 @@ The purpose of this lab is to practice domain management, user creation, and rem
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/98f3e489ebfe4e4fea479fd059828a2f39b98736/Screenshot%2020.png)
 
 - now right click on the Organizational unit you created, click New, and go to user
+
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/3a02de0f71466d83ab42e367dd81cb38493541fa/Screenshot%2021.png)
 
 - Now that we have created a user, create one that you can remember( you can use your own name to make it easy)
@@ -146,13 +149,14 @@ The purpose of this lab is to practice domain management, user creation, and rem
 # section 9: add PowerShell script to automate user account to the domain
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2036.png)
 
--Now go to Internet Explorer 
+- Now go to Internet Explorer 
 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2037.png)
 
 - input https://github.com/joshmadakor1/AD_PS/archive/master.zip
 - to make sure you can get to this website. Go to Internet Settings, go to Security, and make sure this website is trusted
-- save the download you go from the website inputted 
+- save the download you go from the website inputted
+- 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2038.png)
 
 - go to your downloads and find names
@@ -175,7 +179,7 @@ The purpose of this lab is to practice domain management, user creation, and rem
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2042.png)
 
 - Now that we can add a script, select the script we were able to download from the website earlier(Which is "1_CREATE-USERS") and click on open
-- 
+ 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2043.png)
 
 - When the script is displayed, run the script, which is the green arrow in the top taskbar bar
@@ -192,12 +196,13 @@ The purpose of this lab is to practice domain management, user creation, and rem
 
 - In the image section, select the Windows 10 Enterprise version 22H2 - x64 Gen2
 - and create a username and password
+
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/54b7124897ee19ecb9e74986b8240a512286a7ee/Screenshot%2033.png)
 
 - When you are in the networking section, make sure that the virtual network and subnet are the same as the first virtual machine, or the lab will not work
 - In this case, we don't need a public IP either.
 - and create the virtual machine
-- 
+ 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/54b7124897ee19ecb9e74986b8240a512286a7ee/Screenshot%2034.png)
 
 - After the creation of the virtual machine, just like earlier in the first virtual machine, go to dns server
