@@ -1,6 +1,6 @@
 # Azure Active Directory
 
-# introduction
+# Introduction
 This lab demonstrates how to build a basic Active Directory environment in Azure using two virtual machines:
 DC01 – Domain Controller, DNS, and DHCP server
 Client01 – Windows client joined the domain
