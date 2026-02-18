@@ -141,11 +141,13 @@ The purpose of this lab is to practice domain management, user creation, and rem
 
 - after clicking add scope in the scope name section, input your private IP address, and at the end, put 100-200(so my private IP is 172.16.0.4, so I input 172.16.0.100-200)
 - then press next
+  
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/eb4c83919bb5378f33a5a421bf43dc99e6339ea9/Screenshot%2030.png)
 
 - When you see the IP address range in the static IP section, input 172.16.0.100
 - in the end IP address input 172.16.0.200
 - and for the length input 24 while leaving the subnet mask as is after you pick the length
+  
 # section 9: add PowerShell script to automate user account to the domain
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2036.png)
 
@@ -155,8 +157,8 @@ The purpose of this lab is to practice domain management, user creation, and rem
 
 - input https://github.com/joshmadakor1/AD_PS/archive/master.zip
 - to make sure you can get to this website. Go to Internet Settings, go to Security, and make sure this website is trusted
-- save the download you go from the website inputted
-- 
+- save the download you get from the website inputted
+
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2038.png)
 
 - go to your downloads and find names
@@ -169,7 +171,7 @@ The purpose of this lab is to practice domain management, user creation, and rem
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2040.png)
 
 -now click on the Windows sign, go to Windows PowerShell ISE, and right click
-- Go to more and click on Run as Administrator
+- Go to More and click on Run as Administrator
   
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/f77bb2cb2ad00e629e158883cb56a579812f518b/Screenshot%2041.png)
 
@@ -188,7 +190,7 @@ The purpose of this lab is to practice domain management, user creation, and rem
 # section 10: create the second virtual machine  and set the DNS to the first virtual machine's private IP
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/54b7124897ee19ecb9e74986b8240a512286a7ee/Screenshot%2031.png)
 
-- create the second virtual machine c
+- Create the second virtual machine 
 - Choose the same resource group you used in the first virtual machine
 - Name the virtual machine and choose the same region used in the first virtual machine
   
@@ -237,22 +239,70 @@ The purpose of this lab is to practice domain management, user creation, and rem
   
 # section 12: make sure everything shows up when pinging 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e2f9e49db7cddf5d55dbec37813818154d157a24/Screenshot50.png)
+
+- log in to the second virtual machine through remote desktop connection and sign in with the admin (admin123\client01, which is your admin account you created with the first virtual machine, and the name of your second virtual machine)
+
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/70d416a75363c1bdcb52e1a1b470b6949a5a24e5/Screenshot%2051.png)
 
+-  Now that we are in the second virtual machine, open the command prompt
+-  verify everything is working by using commands like whoami, nslookup, ping, and even ipconfig /all
+-  So in the end, you need to make sure that everything is verified to work in the client virtual machine, and you are sure that your second virtual machine can connect to your first virtual machine, which has the domain
+  
 # section 13: have the second virtual machine join the domain in the Active Directory
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/70d416a75363c1bdcb52e1a1b470b6949a5a24e5/Screenshot%2052.png)
+
+- Now we right-click the Windows sign and go to System
+  
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/70d416a75363c1bdcb52e1a1b470b6949a5a24e5/Screenshot%2053.png)
+
+- Once in the system settings, select Rename this PC(advanced)
+
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/70d416a75363c1bdcb52e1a1b470b6949a5a24e5/Screenshot%2054.png)
+
+- Now we have to join this virtual machine to the domain we made earlier in the first virtual machine
+- click change select domain and input the domain we made 
+  
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/04ce0c289e4857e36df2ede1138bc8f329590f74/screenshot%2055.png)
+
+- Once you press ok, you will be prompted to input an account that has permissions to join the domain
+- so we would use the admin account credentials or the domain controller account credentials
+- When you press ok, you will be prompted to restart the virtual machine, which you proceed with
+
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/04ce0c289e4857e36df2ede1138bc8f329590f74/Screenshot%2056.png)
 
+- While your second virtual machine is restarting, we can check the Active Directory to make sure the second VM is part of the Active Directory by looking in the Computers section
 
 # section 14: make sure everything works with remote logons 
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/04ce0c289e4857e36df2ede1138bc8f329590f74/Screenshot50.png)
+
+- Sign back into the second virtual machine with the admin account, just like before
+  
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/04ce0c289e4857e36df2ede1138bc8f329590f74/Screenshot%2057.png)
+
+- Once in the second virtual machine, open a command prompt and input lusrmgr.msc(local user and groups) 
+- We do this to add permissions
+
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/82f3bd38b2f755c0853882fe7f881daa405ada73/Screenshot%2058.png)
+
+- Once we are in the local user and groups, go to the remote desktop users' properties
+- Click Add and input the domain users
+  
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e4dc21116a286bb42bc276aa54d6311920333786/Screenshot%2059.png)
+
+- Now we check that the lab works by going back to the domain controller account
+- We go to Remote Desktop Connections, use the second virtual machine's private IP address, and input a user name from one of the users we made earlier in our domain
+
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e4dc21116a286bb42bc276aa54d6311920333786/Screenshot%2060.png)
+
+- once we a in the user account open domain and verify who we are by using the whoami command
+  
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e4dc21116a286bb42bc276aa54d6311920333786/Screenshot%2061.png)
+
+- now sign out and input another user's account that was created earlier
+  
 ![image alt](https://github.com/jaidenework/active-directory-lab-/blob/e4dc21116a286bb42bc276aa54d6311920333786/Screenshot%2062.png)
+
+- Finally, once again, verify what account we are in with the whoami command 
+
+- and now you have fully completed the lab 
 
